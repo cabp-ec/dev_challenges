@@ -1,17 +1,17 @@
 <?php
-declare(strict_types=1);
 
+require_once('../lib/autoload.php');
 
-use Slim\Factory\AppFactory;
+$ds = DIRECTORY_SEPARATOR;
+$pathSettings = dirname(__DIR__) . $ds . "settings$ds";
+unset($ds);
 
-require __DIR__ . '/../vendor/autoload.php';
+$settings = [
+    'di' => include_once $pathSettings . 'di.php',
+    'routes' => include_once $pathSettings . 'routes.php',
+    'pipelines' => include_once $pathSettings . 'pipelines.php',
+];
 
-$app = AppFactory::create();
-
-$middleware = require __DIR__ . '/../app/middleware.php';
-$middleware($app);
-
-$routes = require __DIR__ . '/../app/routes.php';
-$routes($app);
-$app->run();
-
+$poker = \App\Kernel::getInstance();
+$poker->setup($settings);
+$poker->run();

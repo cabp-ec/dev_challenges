@@ -1,0 +1,4 @@
+{
+  "issue": [ "open", "voting", "reveal" ],
+  "member": [ "voted", "waiting", "passed" ]
+}

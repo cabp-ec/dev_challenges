@@ -1,0 +1,38 @@
+{
+  "id": "Redis Key",
+  "date": "timestamp",
+  "summary": "A summary of the discussion is recorded, e.g. by the Moderator",
+  "estimateLimits": {
+    "min": 1,
+    "max": 21
+  },
+  "moderator": {
+    "name": "Barak Obama",
+    "email": "barak.obama@thewhitehousepoker.net"
+  },
+  "issues": [
+    {
+      "id": "Redis Key",
+      "code": "Unique external code e.g. jira ticket",
+      "name": "Screening Quiz",
+      "overview": "Usually provided by the product owner",
+      "criteria": "Acceptance criteria",
+      "status": "open",
+      "avg": 0,
+      "members": [
+        {
+          "name": "Batman",
+          "email": "batman@thewhitehousepoker.net",
+          "status": "waiting",
+          "value": 0
+        },
+        {
+          "name": "Superman",
+          "email": "superman@thewhitehousepoker.net",
+          "status": "waiting",
+          "value": 0
+        }
+      ]
+    }
+  ]
+}

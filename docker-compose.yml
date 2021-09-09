@@ -8,7 +8,7 @@ services:
       #Switch it on for debug
       #PHP_EXTENSION_XDEBUG: 1
     volumes:
-      - "./backend/:/app"
+      - "./backend/:/src"
     working_dir: /app
     command: "php -S 0.0.0.0:8081 -t public public/index.php"
     ports:
